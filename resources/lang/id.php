@@ -14,44 +14,43 @@ return [
      */
     \Core\Support\Time::NAME => [
 
-        'y' => 'tahun',
-        'm' => 'bulan',
-        'd' => 'hari',
-        'h' => 'jam',
-        'i' => 'menit',
-        's' => 'detik',
+        'y' => 'anos',
+        'm' => 'meses',
+        'd' => 'dias',
+        'h' => 'horas',
+        'i' => 'minutos',
+        's' => 'segundos',
 
-        'ago' => 'yang lalu.',
-        'recently' => 'baru saja.',
+        'ago' => 'atrás.',
+        'recently' => 'recentemente.',
     ],
 
     /**
      * Validator.
      */
     \Core\Valid\Validator::NAME => [
-
         'request' => [
-            'required' => ':field dibutuhkan!.',
-            'email' => ':field tidak valid!.',
-            'dns' => ':field tidak valid!.',
-            'url' => ':field tidak valid!.',
-            'uuid' => ':field bukan uuid!.',
-            'int' => ':field harus angka!.',
-            'float' => ':field harus desimal!.',
-            'min' => ':field panjang minimal: :attribute',
-            'max' => ':field panjang maxsimal: :attribute',
-            'sama' => ':field tidak sama dengan :attribute',
-            'unik' => ':field sudah ada!.',
+            'required' => ':field é obrigatório!.',
+            'email' => ':field não é válido!.',
+            'dns' => ':field não é válido!.',
+            'url' => ':field não é válido!.',
+            'uuid' => ':field não é um UUID!.',
+            'int' => ':field deve ser um número inteiro!.',
+            'float' => ':field deve ser um número decimal!.',
+            'min' => ':field deve ter no mínimo: :attribute caracteres',
+            'max' => ':field deve ter no máximo: :attribute caracteres',
+            'sama' => ':field não corresponde a :attribute',
+            'unik' => ':field já existe!.',
         ],
 
         'file' => [
-            'required' => ':field dibutuhkan!.',
-            'min' => ':field panjang minimal: :attribute',
-            'max' => ':field panjang maxsimal: :attribute',
-            'mimetypes' => ':field diperbolehkan: :attribute',
-            'mimes' => ':field diperbolehkan: :attribute',
-            'unsafe' => ':field terindikasi tidak aman!.',
-            'corrupt' => ':field tidak terupload dengan benar!.',
+            'required' => ':field é obrigatório!.',
+            'min' => ':field deve ter no mínimo: :attribute caracteres',
+            'max' => ':field deve ter no máximo: :attribute caracteres',
+            'mimetypes' => ':field permitido: :attribute',
+            'mimes' => ':field permitido: :attribute',
+            'unsafe' => ':field foi considerado inseguro!.',
+            'corrupt' => ':field não foi carregado corretamente!.',
         ],
     ]
 ];
