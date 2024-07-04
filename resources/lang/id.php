@@ -14,11 +14,11 @@ return [
      */
     \Core\Support\Time::NAME => [
 
-        'y' => 'anos',
-        'm' => 'meses',
-        'd' => 'dias',
-        'h' => 'horas',
-        'i' => 'minutos',
+        'y' => 'ano(s)',
+        'm' => 'mes(es)',
+        'd' => 'dia(s)',
+        'h' => 'hora(s)',
+        'i' => 'minuto(s)',
         's' => 'segundos',
 
         'ago' => 'atrás.',
